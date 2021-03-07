@@ -1,0 +1,139 @@
+html { min-height:100%;
+}
+
+
+body {  
+min-height: 100%;
+background-image: linear-gradient(#0d0052, rgb(17, 0, 80), #0d0052);
+margin: 0;
+padding: 0;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+ 
+/* Styling the navigation bar*/
+#navbar{
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: rgb(27, 1, 121);
+    height: 100px;
+}
+
+#nav-list a{
+    font-weight: bold;
+    margin-left: 50px ;
+    margin-top: 25px;
+    color: aliceblue;
+}
+
+#nav-list a:hover{
+    background-color: #0f0027;
+    border-radius: 50px;
+}
+
+#nav-list a:focus{
+    background-color: rgb(15, 0, 39);
+    border-radius: 50px;
+}
+
+/*------------------- Styling the BODY-----------*/
+
+/* The background */
+
+#row1{
+
+    min-height: 100%;
+}
+
+#sec{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: 0;
+    min-height: 100%;
+    background-image: url("../images/background2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* The background---END */
+
+
+/* The elements on top of the image: THe title and such..*/
+
+
+/* The Title*/
+#slogan{
+    margin: 50px;
+    padding: 10px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(27, 1, 121, 0.466);
+}
+
+/* The Title---END */
+
+/*The icons*/
+#icons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 210px;
+    background-color: #0e0052cc;
+    bottom:0; left: 0; right: 0;
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 24px;
+    
+} 
+
+
+#icon1, #icon2, #icon3, #icon4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px;
+    
+}
+
+.icon1:hover, .icon2:hover, .icon3 :hover, .icon4:hover{
+    animation-name: rescale;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+
+/*The icons----END*/
+
+
+
+
+/***KEYFRAMES***/
+
+/****animation for rescaling the icons***/
+@keyframes rescale{
+
+    0%{
+        position: relative;
+        top: 0;
+    }
+
+    50%{
+        position: relative;
+        top: -10px;
+    }
+    100%{
+        position: relative;
+        top: 0;
+    }
+}
